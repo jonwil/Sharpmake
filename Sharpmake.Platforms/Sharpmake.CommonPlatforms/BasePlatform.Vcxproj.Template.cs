@@ -23,6 +23,7 @@ namespace Sharpmake
       <TreatWarningAsError>[options.TreatWarningAsError]</TreatWarningAsError>
       <DiagnosticsFormat>[options.DiagnosticsFormat]</DiagnosticsFormat>
       <MultiProcessorCompilation>[options.MultiProcessorCompilation]</MultiProcessorCompilation>
+      <SDLCheck>[options.SDLChecks]</SDLCheck>
       <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
       <InlineFunctionExpansion>[options.InlineFunctionExpansion]</InlineFunctionExpansion>
       <IntrinsicFunctions>[options.EnableIntrinsicFunctions]</IntrinsicFunctions>

@@ -601,6 +601,12 @@ namespace Sharpmake.Generators.VisualStudio
             Options.Option(Options.Vc.Compiler.MultiProcessorCompilation.Disable, () => { context.Options["MultiProcessorCompilation"] = "false"; context.CommandLineOptions["MultiProcessorCompilation"] = FileGeneratorUtilities.RemoveLineTag; })
             );
 
+            //Options.Vc.Compiler.SDLChecks.
+            context.SelectOption
+            (
+            Options.Option(Options.Vc.Compiler.SDLChecks.Enable, () => { context.Options["SDLChecks"] = "true"; context.CommandLineOptions["SDLChecks"] = "/SDL"; }),
+            Options.Option(Options.Vc.Compiler.SDLChecks.Disable, () => { context.Options["SDLChecks"] = "false"; context.CommandLineOptions["SDLChecks"] = FileGeneratorUtilities.RemoveLineTag; })
+            );
 
             //Options.Vc.Compiler.Optimization.
             //    Disable                                 Project.ProjectConfiguration.Tool.Optimization="0"             /Od

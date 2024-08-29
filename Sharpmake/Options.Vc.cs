@@ -502,6 +502,16 @@ namespace Sharpmake
                 }
 
                 /// <summary>
+                /// SDL Checks
+                /// </summary>
+                public enum SDLChecks
+                {
+                    Enable,
+                    [Default]
+                    Disable
+                }
+
+                /// <summary>
                 /// Select option for code optimization; choose Custom to use specific optimization options.
                 /// </summary>
                 public enum Optimization
